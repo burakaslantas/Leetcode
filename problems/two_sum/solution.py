@@ -1,10 +1,8 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
-        for index, current in enumerate(nums):
-            remaining = target - current
-            
-            if (remaining in seen):
-                return [index, seen[remaining]]
+        buffer = {}
+        for i in range(len(nums)):
+            if nums[i] in buffer:
+                return [buffer[nums[i]], i]
             else:
-                seen[current] = index
+                buffer[target - nums[i]] = i
