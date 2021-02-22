@@ -1,14 +1,18 @@
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
-        """
-        Solution #1
-        res = [nums[0]]
-        for item in nums[1:]:
-            res.append( res[-1] + item )
-        return res
-        """
-    
-        #Solution #2
-        for item in range(1, len(nums)):
-            nums[item] += nums[item-1]
+        """total = 0
+        res = []
+        for i in range(len(nums)):
+            if i == 0:
+                total += nums[0]
+                res.append(total)
+            else:
+                total += nums[i]
+                res.append(total)
+        return res"""
+        
+        i = 1
+        while i < len(nums):
+            nums[i] += nums[i-1]
+            i += 1
         return nums
