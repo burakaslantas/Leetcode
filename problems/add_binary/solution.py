@@ -1,5 +1,7 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
+        """
+        Solution #1
         pointerA = len(a) - 1
         pointerB = len(b) - 1
         carry = 0
@@ -23,3 +25,19 @@ class Solution:
             res.append(carry)
         
         return ''.join(str(digit) for digit in res[::-1])
+    
+        #Example:
+        #   11     ////////////
+        #    1     # carry: 1 #
+        # +---     ////////////
+        #  100
+        """
+        
+        #Solution #2
+        x, y = int(a, 2), int(b, 2)
+        
+        while(y):
+            answer = x ^ y
+            carry = (x & y) << 1
+            x, y = answer, carry
+        return bin(x)[2:]
