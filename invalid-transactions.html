@@ -1,0 +1,31 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>**************************<div id="title">1169. Invalid Transactions</div>
+**************************<div class="content__u3I1 question-content__JfgR"><div><p>A transaction is possibly invalid if:</p>
+<ul>
+<li>the amount exceeds <code>$1000</code>, or;</li>
+<li>if it occurs within (and including) <code>60</code> minutes of another transaction with the <strong>same name</strong> in a <strong>different city</strong>.</li>
+</ul>
+<p>You are given an array of strings <code>transaction</code> where <code>transactions[i]</code> consists of comma-separated values representing the name, time (in minutes), amount, and city of the transaction.</p>
+<p>Return a list of <code>transactions</code> that are possibly invalid. You may return the answer in <strong>any order</strong>.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> transactions = ["alice,20,800,mtv","alice,50,100,beijing"]
+<strong>Output:</strong> ["alice,20,800,mtv","alice,50,100,beijing"]
+<strong>Explanation:</strong> The first transaction is invalid because the second transaction occurs within a difference of 60 minutes, have the same name and is in a different city. Similarly the second one is invalid too.</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> transactions = ["alice,20,800,mtv","alice,50,1200,mtv"]
+<strong>Output:</strong> ["alice,50,1200,mtv"]
+</pre>
+<p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> transactions = ["alice,20,800,mtv","bob,50,1200,mtv"]
+<strong>Output:</strong> ["bob,50,1200,mtv"]
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>transactions.length &lt;= 1000</code></li>
+<li>Each <code>transactions[i]</code> takes the form <code>"{name},{time},{amount},{city}"</code></li>
+<li>Each <code>{name}</code> and <code>{city}</code> consist of lowercase English letters, and have lengths between <code>1</code> and <code>10</code>.</li>
+<li>Each <code>{time}</code> consist of digits, and represent an integer between <code>0</code> and <code>1000</code>.</li>
+<li>Each <code>{amount}</code> consist of digits, and represent an integer between <code>0</code> and <code>2000</code>.</li>
+</ul>
+</div></div><br><br><hr><br>

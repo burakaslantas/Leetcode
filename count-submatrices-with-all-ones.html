@@ -1,0 +1,46 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>*************************************<div id="title">1504. Count Submatrices With All Ones</div>
+*************************************<div class="content__u3I1 question-content__JfgR"><div><p>Given a <code>rows * columns</code> matrix <code>mat</code> of ones and zeros, return how many <strong>submatrices</strong> have all ones.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> mat = [[1,0,1],
+              [1,1,0],
+              [1,1,0]]
+<strong>Output:</strong> 13
+<strong>Explanation:
+</strong>There are <b>6</b> rectangles of side 1x1.
+There are <b>2</b> rectangles of side 1x2.
+There are <b>3</b> rectangles of side 2x1.
+There is <b>1</b> rectangle of side 2x2. 
+There is <b>1</b> rectangle of side 3x1.
+Total number of rectangles = 6 + 2 + 3 + 1 + 1 = <strong>13.</strong>
+</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> mat = [[0,1,1,0],
+              [0,1,1,1],
+              [1,1,1,0]]
+<strong>Output:</strong> 24
+<strong>Explanation:</strong>
+There are <b>8</b> rectangles of side 1x1.
+There are <b>5</b> rectangles of side 1x2.
+There are <b>2</b> rectangles of side 1x3. 
+There are <b>4</b> rectangles of side 2x1.
+There are <b>2</b> rectangles of side 2x2. 
+There are <b>2</b> rectangles of side 3x1. 
+There is <b>1</b> rectangle of side 3x2. 
+Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24<strong>.</strong>
+</pre>
+<p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> mat = [[1,1,1,1,1,1]]
+<strong>Output:</strong> 21
+</pre>
+<p><strong>Example 4:</strong></p>
+<pre><strong>Input:</strong> mat = [[1,0,1],[0,1,0],[1,0,1]]
+<strong>Output:</strong> 5
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= rows &lt;= 150</code></li>
+<li><code>1 &lt;= columns &lt;= 150</code></li>
+<li><code>0 &lt;= mat[i][j] &lt;= 1</code></li>
+</ul></div></div><br><br><hr><br>

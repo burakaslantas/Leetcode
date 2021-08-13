@@ -1,0 +1,32 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>**************************************<div id="title">1419. Minimum Number of Frogs Croaking</div>
+**************************************<div class="content__u3I1 question-content__JfgR"><div><p>Given the string <code>croakOfFrogs</code>, which represents a combination of the string "croak" from different frogs, that is, multiple frogs can croak at the same time, so multiple “croak” are mixed. <em>Return the minimum number of </em>different<em> frogs to finish all the croak in the given string.</em></p>
+<p>A valid "croak" means a frog is printing 5 letters ‘c’, ’r’, ’o’, ’a’, ’k’ <strong>sequentially</strong>. The frogs have to print all five letters to finish a croak. If the given string is not a combination of valid "croak" return -1.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> croakOfFrogs = "croakcroak"
+<strong>Output:</strong> 1 
+<strong>Explanation:</strong> One frog yelling "croak<strong>"</strong> twice.
+</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> croakOfFrogs = "crcoakroak"
+<strong>Output:</strong> 2 
+<strong>Explanation:</strong> The minimum number of frogs is two. 
+The first frog could yell "<strong>cr</strong>c<strong>oak</strong>roak".
+The second frog could yell later "cr<strong>c</strong>oak<strong>roak</strong>".
+</pre>
+<p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> croakOfFrogs = "croakcrook"
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> The given string is an invalid combination of "croak<strong>"</strong> from different frogs.
+</pre>
+<p><strong>Example 4:</strong></p>
+<pre><strong>Input:</strong> croakOfFrogs = "croakcroa"
+<strong>Output:</strong> -1
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= croakOfFrogs.length &lt;= 10^5</code></li>
+<li>All characters in the string are: <code>'c'</code>, <code>'r'</code>, <code>'o'</code>, <code>'a'</code> or <code>'k'</code>.</li>
+</ul>
+</div></div><br><br><hr><br>

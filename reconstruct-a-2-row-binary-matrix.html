@@ -1,0 +1,34 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>***************************************<div id="title">1253. Reconstruct a 2-Row Binary Matrix</div>
+***************************************<div class="content__u3I1 question-content__JfgR"><div><p>Given the following details of a matrix with <code>n</code> columns and <code>2</code> rows :</p>
+<ul>
+<li>The matrix is a binary matrix, which means each element in the matrix can be <code>0</code> or <code>1</code>.</li>
+<li>The sum of elements of the 0-th(upper) row is given as <code>upper</code>.</li>
+<li>The sum of elements of the 1-st(lower) row is given as <code>lower</code>.</li>
+<li>The sum of elements in the i-th column(0-indexed) is <code>colsum[i]</code>, where <code>colsum</code> is given as an integer array with length <code>n</code>.</li>
+</ul>
+<p>Your task is to reconstruct the matrix with <code>upper</code>, <code>lower</code> and <code>colsum</code>.</p>
+<p>Return it as a 2-D integer array.</p>
+<p>If there are more than one valid solution, any of them will be accepted.</p>
+<p>If no valid solution exists, return an empty 2-D array.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> upper = 2, lower = 1, colsum = [1,1,1]
+<strong>Output:</strong> [[1,1,0],[0,0,1]]
+<strong>Explanation: </strong>[[1,0,1],[0,1,0]], and [[0,1,1],[1,0,0]] are also correct answers.
+</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> upper = 2, lower = 3, colsum = [2,2,1,1]
+<strong>Output:</strong> []
+</pre>
+<p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> upper = 5, lower = 5, colsum = [2,1,2,0,1,0,1,2,0,1]
+<strong>Output:</strong> [[1,1,1,0,1,0,0,1,0,0],[1,0,1,0,0,0,1,1,0,1]]
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= colsum.length &lt;= 10^5</code></li>
+<li><code>0 &lt;= upper, lower &lt;= colsum.length</code></li>
+<li><code>0 &lt;= colsum[i] &lt;= 2</code></li>
+</ul>
+</div></div><br><br><hr><br>

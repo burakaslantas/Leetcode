@@ -1,0 +1,43 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>*************************************************<div id="title">1568. Minimum Number of Days to Disconnect Island</div>
+*************************************************<div class="content__u3I1 question-content__JfgR"><div><p>Given a 2D <code>grid</code> consisting of <code>1</code>s (land) and <code>0</code>s (water).  An <em>island</em> is a maximal 4-directionally (horizontal or vertical) connected group of <code>1</code>s.</p>
+<p>The grid is said to be <strong>connected</strong> if we have <strong>exactly one island</strong>, otherwise is said <strong>disconnected</strong>.</p>
+<p>In one day, we are allowed to change <strong>any </strong>single land cell <code>(1)</code> into a water cell <code>(0)</code>.</p>
+<p>Return <em>the minimum number of days</em> to disconnect the grid.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/08/13/1926_island.png" style="width: 498px; height: 139px;"/></strong></p>
+<pre><strong>Input:</strong> grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> We need at least 2 days to get a disconnected grid.
+Change land grid[1][1] and grid[0][2] to water and get 2 disconnected island.
+</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> grid = [[1,1]]
+<strong>Output:</strong> 2
+<strong>Explanation: </strong>Grid of full water is also disconnected ([[1,1]] -&gt; [[0,0]]), 0 islands.
+</pre>
+<p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> grid = [[1,0,1,0]]
+<strong>Output:</strong> 0
+</pre>
+<p><strong>Example 4:</strong></p>
+<pre><strong>Input:</strong> grid = [[1,1,0,1,1],
+               [1,1,1,1,1],
+               [1,1,0,1,1],
+               [1,1,0,1,1]]
+<strong>Output:</strong> 1
+</pre>
+<p><strong>Example 5:</strong></p>
+<pre><strong>Input:</strong> grid = [[1,1,0,1,1],
+               [1,1,1,1,1],
+               [1,1,0,1,1],
+               [1,1,1,1,1]]
+<strong>Output:</strong> 2
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= grid.length, grid[i].length &lt;= 30</code></li>
+<li><code>grid[i][j]</code> is <code>0</code> or <code>1</code>.</li>
+</ul>
+</div></div><br><br><hr><br>

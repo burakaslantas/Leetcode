@@ -1,0 +1,34 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>***********************************<div id="title">1540. Can Convert String in K Moves</div>
+***********************************<div class="content__u3I1 question-content__JfgR"><div><p>Given two strings <code>s</code> and <code>t</code>, your goal is to convert <code>s</code> into <code>t</code> in <code>k</code><strong> </strong>moves or less.</p>
+<p>During the <code>i<sup>th</sup></code> (<font face="monospace"><code>1 &lt;= i &lt;= k</code>) </font>move you can:</p>
+<ul>
+<li>Choose any index <code>j</code> (1-indexed) from <code>s</code>, such that <code>1 &lt;= j &lt;= s.length</code> and <code>j</code> has not been chosen in any previous move, and shift the character at that index <code>i</code> times.</li>
+<li>Do nothing.</li>
+</ul>
+<p>Shifting a character means replacing it by the next letter in the alphabet (wrapping around so that <code>'z'</code> becomes <code>'a'</code>). Shifting a character by <code>i</code> means applying the shift operations <code>i</code> times.</p>
+<p>Remember that any index <code>j</code> can be picked at most once.</p>
+<p>Return <code>true</code> if it's possible to convert <code>s</code> into <code>t</code> in no more than <code>k</code> moves, otherwise return <code>false</code>.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> s = "input", t = "ouput", k = 9
+<strong>Output:</strong> true
+<b>Explanation: </b>In the 6th move, we shift 'i' 6 times to get 'o'. And in the 7th move we shift 'n' to get 'u'.
+</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> s = "abc", t = "bcd", k = 10
+<strong>Output:</strong> false
+<strong>Explanation: </strong>We need to shift each character in s one time to convert it into t. We can shift 'a' to 'b' during the 1st move. However, there is no way to shift the other characters in the remaining moves to obtain t from s.
+</pre>
+<p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> s = "aab", t = "bbb", k = 27
+<strong>Output:</strong> true
+<b>Explanation: </b>In the 1st move, we shift the first 'a' 1 time to get 'b'. In the 27th move, we shift the second 'a' 27 times to get 'b'.
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= s.length, t.length &lt;= 10^5</code></li>
+<li><code>0 &lt;= k &lt;= 10^9</code></li>
+<li><code>s</code>, <code>t</code> contain only lowercase English letters.</li>
+</ul>
+</div></div><br><br><hr><br>

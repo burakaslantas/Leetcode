@@ -1,0 +1,20 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>****************************<div id="title">1052. Grumpy Bookstore Owner</div>
+****************************<div class="content__u3I1 question-content__JfgR"><div><p>Today, the bookstore owner has a store open for <code>customers.length</code> minutes.  Every minute, some number of customers (<code>customers[i]</code>) enter the store, and all those customers leave after the end of that minute.</p>
+<p>On some minutes, the bookstore owner is grumpy.  If the bookstore owner is grumpy on the i-th minute, <code>grumpy[i] = 1</code>, otherwise <code>grumpy[i] = 0</code>.  When the bookstore owner is grumpy, the customers of that minute are not satisfied, otherwise they are satisfied.</p>
+<p>The bookstore owner knows a secret technique to keep themselves not grumpy for <code>minutes</code> minutes straight, but can only use it once.</p>
+<p>Return the maximum number of customers that can be satisfied throughout the day.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input: </strong>customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], minutes = 3
+<strong>Output: </strong>16
+<strong>Explanation:</strong> The bookstore owner keeps themselves not grumpy for the last 3 minutes. 
+The maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 16.
+</pre>
+<p> </p>
+<p><strong>Note:</strong></p>
+<ul>
+<li><code>1 &lt;= minutes &lt;= customers.length == grumpy.length &lt;= 20000</code></li>
+<li><code>0 &lt;= customers[i] &lt;= 1000</code></li>
+<li><code>0 &lt;= grumpy[i] &lt;= 1</code></li>
+</ul>
+</div></div><br><br><hr><br>

@@ -1,0 +1,33 @@
+<style>pre{white-space:pre-wrap;background:#f7f9fa;padding:10px 15px;color:#263238;line-height:1.6;font-size:13px;border-radius:3px margin-top: 0;margin-bottom:1em;overflow:auto}b,strong{font-weight:bolder}#title{font-size:16px;color:#212121;font-weight:600;margin-bottom:10px}hr{height:10px;border:0;box-shadow:0 10px 10px -10px #8c8b8b inset}</style>************************************************************<div id="title">1111. Maximum Nesting Depth of Two Valid Parentheses Strings</div>
+************************************************************<div class="content__u3I1 question-content__JfgR"><div><p>A string is a <em>valid parentheses string</em> (denoted VPS) if and only if it consists of <code>"("</code> and <code>")"</code> characters only, and:</p>
+<ul>
+<li>It is the empty string, or</li>
+<li>It can be written as <code>AB</code> (<code>A</code> concatenated with <code>B</code>), where <code>A</code> and <code>B</code> are VPS's, or</li>
+<li>It can be written as <code>(A)</code>, where <code>A</code> is a VPS.</li>
+</ul>
+<p>We can similarly define the <em>nesting depth</em> <code>depth(S)</code> of any VPS <code>S</code> as follows:</p>
+<ul>
+<li><code>depth("") = 0</code></li>
+<li><code>depth(A + B) = max(depth(A), depth(B))</code>, where <code>A</code> and <code>B</code> are VPS's</li>
+<li><code>depth("(" + A + ")") = 1 + depth(A)</code>, where <code>A</code> is a VPS.</li>
+</ul>
+<p>For example,  <code>""</code>, <code>"()()"</code>, and <code>"()(()())"</code> are VPS's (with nesting depths 0, 1, and 2), and <code>")("</code> and <code>"(()"</code> are not VPS's.</p>
+<p> </p>
+<p>Given a VPS <font face="monospace">seq</font>, split it into two disjoint subsequences <code>A</code> and <code>B</code>, such that <code>A</code> and <code>B</code> are VPS's (and <code>A.length + B.length = seq.length</code>).</p>
+<p>Now choose <strong>any</strong> such <code>A</code> and <code>B</code> such that <code>max(depth(A), depth(B))</code> is the minimum possible value.</p>
+<p>Return an <code>answer</code> array (of length <code>seq.length</code>) that encodes such a choice of <code>A</code> and <code>B</code>:  <code>answer[i] = 0</code> if <code>seq[i]</code> is part of <code>A</code>, else <code>answer[i] = 1</code>.  Note that even though multiple answers may exist, you may return any of them.</p>
+<p> </p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> seq = "(()())"
+<strong>Output:</strong> [0,1,1,1,1,0]
+</pre>
+<p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> seq = "()(())()"
+<strong>Output:</strong> [0,0,0,1,1,0,1,1]
+</pre>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= seq.size &lt;= 10000</code></li>
+</ul>
+</div></div><br><br><hr><br>
