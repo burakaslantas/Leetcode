@@ -12,3 +12,4 @@ class Solution:
         res = []
         backtrack(0, length)
         return res
+    #Note to myself: Learn DFS Algorithm, Backtracking, difference between "nums[:]"" and "nums"!
