@@ -1,6 +1,7 @@
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
         """
+        Solution #1
         upTo = int(sqrt(c)) + 1
         
         for a in range(upTo):
@@ -9,7 +10,8 @@ class Solution:
                     return True
         return False
         """
-    
+        
+        #Solution #2
         upTo = int(sqrt(c)) + 1
         
         for b in range(upTo):
