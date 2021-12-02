@@ -5,7 +5,7 @@ This repo contains all of my personal LeetCode solutions. The coding solutions p
 
 _All solutions were made with the sole intent of solving the corresponding LeetCode challenge. Solutions may not be as efficient as possible._
 
-_All solutions are orderd by: Title_
+_All solutions are ordered by: Title_
 
 
 |  #  | Title | Solution | Difficulty |
