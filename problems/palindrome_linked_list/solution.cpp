@@ -45,7 +45,14 @@ public:
             prev = head;
             head = next;
         }
-        
+        /*
+        // BURADA SIKINTI VAR !!!
+        for( ; head != NULL; head = head->next) // Next kullanmadan yapınca bir sıkıntı var???
+        {
+            head->next = prev;
+            prev = head;
+        }
+        */
         return prev;
     }
 };
